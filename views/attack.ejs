@@ -1,0 +1,51 @@
+<%- include('./partials/header.ejs') %>
+
+<%- include('./partials/statictop.ejs') %>
+
+    <br>
+        <div class="container">    
+            <div class="row align-items-center text-center">
+                <div class="col-6 mx-auto box">
+                    <div class="row">
+                        <h4><%=choice.charAt(0).toUpperCase() + choice.slice(1)%> moves deal:</h6>
+                        <p>2x damage to:
+                            <div class="row justify-content-center">
+                            <% results.double_damage_to.forEach(el => { %>
+                                <% let type = Object.values(el).slice(0,1) %> 
+                                <div class="col-4">
+                                    <span class="<%=type%> btn2"> <%= type %> </span>
+                                </div>
+                            <% }) %>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>1/2x damage to:
+                            <div class="row justify-content-center">
+                            <% results.half_damage_to.forEach(el => { %>
+                                <% let type = Object.values(el).slice(0,1) %>  
+                                <div class="col-4">
+                                    <span class="<%=type%> btn2"> <%= type %> </span>
+                                </div>
+                            <% }) %>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>0x damage to:
+                            <div class="row justify-content-center">
+                            <% results.no_damage_to.forEach(el => { %>
+                                <% let type = Object.values(el).slice(0,1) %> 
+                                <div class="col-4">
+                                    <span class="<%=type%> btn2"> <%= type %> </span> 
+                                </div>
+                            <% }) %>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div>
+
+<%- include('./partials/footer.ejs') %>

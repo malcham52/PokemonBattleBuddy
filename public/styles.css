@@ -1,0 +1,160 @@
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#the-footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #263238;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.breadcrumb li a    {
+    color: white;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#homepage{
+    height: auto;
+}
+
+
+.btn{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    color: white;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 90%;
+    padding: 0%;
+    line-height: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active{
+    text-shadow: none;
+    color: black;
+    border: 3px solid #dc3545;
+}
+
+.dcheck:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active{
+    text-shadow: none;
+    color: black;
+    border: 3px solid #0d6efd;
+}
+
+.btn2{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    color: white;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 90%;
+    padding: 0%;
+    line-height: 40px;
+    border-radius: 0.375rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+.submit{
+    width: 100%;
+}
+
+/* ---------------- Type Colors --------------------- */
+.normal{
+    background-color: #aaaa99;
+    border: 2px solid #88887b;
+}
+.fighting{
+    background-color: #bb5544;
+    border: 2px solid #964436;
+}
+.fire{
+    background-color: #ff4422;
+    border: 2px solid #cc361b;
+}
+.water{
+    background-color: #3399ff;
+    border: 2px solid #297bcc;
+}
+.electric{
+    background-color: #ffcc33;
+    border: 2px solid #cca329;
+}
+.grass{
+    background-color: #77cc55;
+    border: 2px solid #5fa344;
+}
+.ice{
+    background-color: #66ccff;
+    border: 2px solid #52a3cc;
+}
+.poison{
+    background-color: #aa5599;
+    border: 2px solid #88447b;
+}
+.ground{
+    background-color: #ddbb55;
+    border: 2px solid #b19644;
+}
+.flying{
+    background-color: #8899ff;
+    border: 2px solid #6d7bcc;
+}
+.psychic{
+    background-color: #ff5599;
+    border: 2px solid #cc447b;
+}
+.bug{
+    background-color: #aabb22;
+    border: 2px solid #88961b; 
+}
+.rock{
+    background-color: #bbaa66;
+    border: 2px solid #968852;
+}
+.ghost{
+    background-color: #6666bb;
+    border: 2px solid #525296;
+}
+.dragon{
+    background-color: #7766ee;
+    border: 2px solid #5f52bf;
+}
+.dark{
+    background-color: #775544;
+    border: 2px solid #5f4436;
+}
+.steel{
+    background-color: #aaaabb;
+    border: 2px solid #888896;
+}
+.fairy{
+    background-color: #ee99ee;
+    border: 2px solid #bf7bbf;
+}
