@@ -5,9 +5,10 @@ How to use:
 --------
 ### -- Launch website
 1. Open the respository in your selected integrated development environment *(ex. Visual Studio Code)*
-2. Run "node index.js" in the terminal *(Requires NodeJS integration)*
-3. The port that the app is running on will be displayed in the console with the message "This app is listening on port ___". *(The default port for this app is 3002.)*
-4. Open your selected internet browser and go to "http://localhost:${port}" *(ex. http://localhost:3002)*
+2. Run "npm i" to download the required node modules  *(Requires NodeJS integration)*
+3. Run "node index.js" in the terminal
+4. The port that the app is running on will be displayed in the console with the message "This app is listening on port ___". *(The default port for this app is 3002.)*
+5. Open your selected internet browser and go to "http://localhost:${port}" *(ex. http://localhost:3002)*
 
 ### -- Attack Section
 1. Select the move-type of Pokemon move you would like to use (ex. Fire for Flamethrower)

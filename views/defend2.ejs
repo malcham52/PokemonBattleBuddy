@@ -6,56 +6,66 @@
         <div class="container">    
             <div class="row align-items-center text-center">
                 <div class="col-6 mx-auto box">
+
                     <div class="row">
                         <h4><%=choice1.charAt(0).toUpperCase() + choice1.slice(1)%>/<%=choice2.charAt(0).toUpperCase() + choice2.slice(1)%> types recieve:</h6>
                         <p>2x damage from:
                             <div class="row justify-content-center">
-                            <% results1.double_damage_from.forEach(el => { %>
-                                <% let type = Object.values(el).slice(0,1) %> 
+                                <% let doubdam = results1.double_damage_from.concat(results2.double_damage_from) %>
+                                <% let doubtype = [] %>
+                                <% doubdam.forEach(el => {
+                                    let temp = Object.values(el).slice(0,1)
+                                    let type = temp.toString()
+                                    doubtype.push(type)}) %>
+                                <% let final2x = doubtype.filter((c, index) => {
+                                    return doubtype.indexOf(c) === index;
+                                }); %>
+                            <% final2x.forEach(el => { %>
                                 <div class="col-4">
-                                    <span class="<%=type%> btn2"> <%= type %> </span>
-                                </div>
-                            <% }) %>
-                            <% results2.double_damage_from.forEach(el => { %>
-                                <% let type = Object.values(el).slice(0,1) %> 
-                                <div class="col-4">
-                                    <span class="<%=type%> btn2"> <%= type %> </span>
+                                    <span class="<%=el%> btn2"> <%= el %> </span>
                                 </div>
                             <% }) %>
                             </div>
                         </p>
                     </div>
+
                     <div class="row">
                         <p>1/2x damage from:
                             <div class="row justify-content-center">
-                            <% results1.half_damage_from.forEach(el => { %>
-                                <% let type = Object.values(el).slice(0,1) %>  
+                                <% let halfdam = results1.half_damage_from.concat(results2.half_damage_from) %>
+                                <% let halftype = [] %>
+                                <% halfdam.forEach(el => {
+                                    let temp = Object.values(el).slice(0,1)
+                                    let type = temp.toString()
+                                    halftype.push(type)}) %>
+                                <% let finalhalfx = halftype.filter((c, index) => {
+                                    return halftype.indexOf(c) === index;
+                                }); %>
+                            <% finalhalfx.forEach(el => { %>
                                 <div class="col-4">
-                                    <span class="<%=type%> btn2"> <%= type %> </span>
-                                </div>
-                            <% }) %>
-                            <% results2.half_damage_from.forEach(el => { %>
-                                <% let type = Object.values(el).slice(0,1) %>  
-                                <div class="col-4">
-                                    <span class="<%=type%> btn2"> <%= type %> </span>
+                                    <span class="<%=el%> btn2"> <%= el %> </span>
                                 </div>
                             <% }) %>
                             </div>
                         </p>
                     </div>
+
+
                     <div class="row">
                         <p>0x damage from:
                             <div class="row justify-content-center">
-                            <% results1.no_damage_from.forEach(el => { %>
-                                <% let type = Object.values(el).slice(0,1) %> 
+                                <% let nodam = results1.no_damage_from.concat(results2.no_damage_from) %>
+                                <% let notype = [] %>
+                                <% nodam.forEach(el => {
+                                    let temp = Object.values(el).slice(0,1)
+                                    let type = temp.toString()
+                                    notype.push(type)}) %>
+                                <% let finalnox = notype.filter((c, index) => {
+                                    return notype.indexOf(c) === index;
+                                }); %>
+                            <% finalnox.forEach(el => { %>
                                 <div class="col-4">
-                                    <span class="<%=type%> btn2"> <%= type %> </span> 
-                                </div>
-                            <% }) %>
-                            <% results2.no_damage_from.forEach(el => { %>
-                                <% let type = Object.values(el).slice(0,1) %> 
-                                <div class="col-4">
-                                    <span class="<%=type%> btn2"> <%= type %> </span> 
+                                    <span class="<%=el%> btn2"> <%= el %> </span>
                                 </div>
                             <% }) %>
                             </div>
