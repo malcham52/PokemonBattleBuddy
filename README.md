@@ -23,4 +23,4 @@ How to use:
 >* Top to Bottom
 2. Press the "DEFEND" button at the bottom of the section
 3. Read which attack move-types will do 2x, 1/2x, or 0x to your Pokemon
->(Note: Future fuctionality to calculate dual-type resistances is in development.)
+>(Note: current functionality will return all weaknesses from both selected types, resulting in possible duplication of types in multiple result areas. Future fuctionality to remove duplicates and calculate dual-type resistances is in development.)
