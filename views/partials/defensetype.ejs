@@ -1,95 +1,95 @@
 <h3>DEFEND</h3>
 <h5>Choose your Pokemon's type(s)</h5>
-                <form action="/defends" method="get">
+                <form action="/defends" method="get" name="def">
                 <div class="row justify-content-center">
                     
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dnormal" autocomplete="off" name="type" value="normal">
+                        <input type="checkbox" class="btn-check dcheck" id="dnormal" autocomplete="off" name="type" value="normal"  onclick='chkcontrol(0)'>
                         <label class="btn normal" for="dnormal">Normal</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dfighting" autocomplete="off" name="type" value="fighting">
+                        <input type="checkbox" class="btn-check dcheck" id="dfighting" autocomplete="off" name="type" value="fighting" onclick='chkcontrol(1)'>
                         <label class="btn fighting" for="dfighting">Fighting</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dflying" autocomplete="off" name="type" value="flying">
+                        <input type="checkbox" class="btn-check dcheck" id="dflying" autocomplete="off" name="type" value="flying" onclick='chkcontrol(2)'>
                         <label class="btn flying" for="dflying">Flying</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dpoison" autocomplete="off" name="type" value="poison">
+                        <input type="checkbox" class="btn-check dcheck" id="dpoison" autocomplete="off" name="type" value="poison" onclick='chkcontrol(3)'>
                         <label class="btn poison" for="dpoison">Poison</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dground" autocomplete="off" name="type" value="ground">
+                        <input type="checkbox" class="btn-check dcheck" id="dground" autocomplete="off" name="type" value="ground" onclick='chkcontrol(4)'>
                         <label class="btn ground" for="dground">Ground</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="drock" autocomplete="off" name="type" value="rock">
+                        <input type="checkbox" class="btn-check dcheck" id="drock" autocomplete="off" name="type" value="rock" onclick='chkcontrol(5)'>
                         <label class="btn rock" for="drock">Rock</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dbug" autocomplete="off" name="type" value="bug">
+                        <input type="checkbox" class="btn-check dcheck" id="dbug" autocomplete="off" name="type" value="bug" onclick='chkcontrol(6)'>
                         <label class="btn bug" for="dbug">Bug</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dghost" autocomplete="off" name="type" value="ghost">
+                        <input type="checkbox" class="btn-check dcheck" id="dghost" autocomplete="off" name="type" value="ghost" onclick='chkcontrol(7)'>
                         <label class="btn ghost" for="dghost">Ghost</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dsteel" autocomplete="off" name="type" value="steel">
+                        <input type="checkbox" class="btn-check dcheck" id="dsteel" autocomplete="off" name="type" value="steel" onclick='chkcontrol(8)'>
                         <label class="btn steel" for="dsteel">Steel</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dfire" autocomplete="off" name="type" value="fire">
+                        <input type="checkbox" class="btn-check dcheck" id="dfire" autocomplete="off" name="type" value="fire" onclick='chkcontrol(9)'>
                         <label class="btn fire" for="dfire">Fire</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dwater" autocomplete="off" name="type" value="water">
+                        <input type="checkbox" class="btn-check dcheck" id="dwater" autocomplete="off" name="type" value="water" onclick='chkcontrol(10)'>
                         <label class="btn water" for="dwater">Water</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dgrass" autocomplete="off" name="type" value="grass">
+                        <input type="checkbox" class="btn-check dcheck" id="dgrass" autocomplete="off" name="type" value="grass" onclick='chkcontrol(11)'>
                         <label class="btn grass" for="dgrass">Grass</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="delectric" autocomplete="off" name="type" value="electric">
+                        <input type="checkbox" class="btn-check dcheck" id="delectric" autocomplete="off" name="type" value="electric" onclick='chkcontrol(12)'>
                         <label class="btn electric" for="delectric">Electric</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dpsychic" autocomplete="off" name="type" value="psychic">
+                        <input type="checkbox" class="btn-check dcheck" id="dpsychic" autocomplete="off" name="type" value="psychic" onclick='chkcontrol(13)'>
                         <label class="btn psychic" for="dpsychic">Psychic</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dice" autocomplete="off" name="type" value="ice">
+                        <input type="checkbox" class="btn-check dcheck" id="dice" autocomplete="off" name="type" value="ice" onclick='chkcontrol(14)'>
                         <label class="btn ice" for="dice">Ice</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="ddragon" autocomplete="off" name="type" value="dragon">
+                        <input type="checkbox" class="btn-check dcheck" id="ddragon" autocomplete="off" name="type" value="dragon" onclick='chkcontrol(15)'>
                         <label class="btn dragon" for="ddragon">Dragon</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="ddark" autocomplete="off" name="type" value="dark">
+                        <input type="checkbox" class="btn-check dcheck" id="ddark" autocomplete="off" name="type" value="dark" onclick='chkcontrol(16)'>
                         <label class="btn dark" for="ddark">Dark</label><br>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                        <input type="checkbox" class="btn-check dcheck" id="dfairy" autocomplete="off" name="type" value="fairy">
+                        <input type="checkbox" class="btn-check dcheck" id="dfairy" autocomplete="off" name="type" value="fairy" onclick='chkcontrol(17)'>
                         <label class="btn fairy" for="dfairy">Fairy</label><br>
                     </div>
 

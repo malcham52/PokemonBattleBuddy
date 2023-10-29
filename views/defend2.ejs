@@ -1,6 +1,6 @@
 <%- include('./partials/header.ejs') %>
 
-<%- include('./partials/statictop.ejs') %>
+<%- include('./partials/inputcheck.ejs') %>
 
     <br>
         <div class="container">    
@@ -8,7 +8,7 @@
                 <div class="col-6 mx-auto box">
 
                     <div class="row">
-                        <h4><%=choice1.charAt(0).toUpperCase() + choice1.slice(1)%>/<%=choice2.charAt(0).toUpperCase() + choice2.slice(1)%> types recieve:</h6>
+                        <h4><%=choice1.charAt(0).toUpperCase() + choice1.slice(1)%>/<%=choice2.charAt(0).toUpperCase() + choice2.slice(1)%> types receive:</h6>
                         <p>2x damage from:
                             <div class="row justify-content-center">
                                 <% let doubdam = results1.double_damage_from.concat(results2.double_damage_from) %>
@@ -75,5 +75,7 @@
             </div>
         </div>
     <div>
+
+<%- include('./partials/statictop.ejs') %>
 
 <%- include('./partials/footer.ejs') %>

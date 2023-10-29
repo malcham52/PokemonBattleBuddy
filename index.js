@@ -21,8 +21,14 @@ app.get("/about", (req, res) => {
 const baseurl = "https://pokeapi.co/api/v2/type"
 
 app.get("/attacks", (req, res) => {
-    const route = req.query.type
+    const route = req.query.atype
     let endpoint = `${baseurl}/${route}`
+    console.log(route)
+    if(route == undefined){
+        res.render("errora.ejs")
+    }
+
+    else{
     fetch(endpoint)
     .then(response => {
         if(response.ok){
@@ -37,6 +43,7 @@ app.get("/attacks", (req, res) => {
         console.log("error: ", error);
         res.render('pokemon.ejs')
     })
+}
 
 });
 
@@ -45,6 +52,10 @@ app.get("/defends", (req, res) => {
     // multiple selections results in an array. ex:[ 'fighting', 'flying' ]
     // url output: http://localhost:3002/defends?type=fighting&type=flying
     
+    if(route == undefined){
+        res.render("errord.ejs")
+    }
+
     if(route[0].length == 1){
     let endpoint = `${baseurl}/${route}`
     fetch(endpoint)
