@@ -1,99 +1,103 @@
 <h3>ATTACK</h3>
 <h5>Choose the attack move type:</h5>
-                <form action="/attacks" method="get">
+                <form action="/attacks" method="get" name="atk">
                 <div class="row justify-content-center">
                     <div class ="col-sm-8 col-lg-3 col-md-4 squish">
-                    <input type="radio" class="btn-check" name="type" id="anormal" value="normal" autocomplete="off" checked>
+                    <input type="radio" class="btn-check" name="atype" id="anormal" value="normal" autocomplete="off">
                     <label class="btn normal" for="anormal">Normal</label>
                     </div>
                     
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id="afighting" value="fighting" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id="afighting" value="fighting" autocomplete="off">
                     <label class="btn fighting" for="afighting">Fighting</label>
                     </div>
                     
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "aflying" value="flying" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "aflying" value="flying" autocomplete="off">
                     <label class="btn flying" for="aflying">Flying</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "apoison" value="poison" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "apoison" value="poison" autocomplete="off">
                     <label class="btn poison" for="apoison">Poison</label>
                     </div>
                     
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "aground" value="ground" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "aground" value="ground" autocomplete="off">
                     <label class="btn ground" for="aground">Ground</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "arock" value="rock" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "arock" value="rock" autocomplete="off">
                     <label class="btn rock" for="arock">Rock</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "abug" value="bug" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "abug" value="bug" autocomplete="off">
                     <label class="btn bug" for="abug">Bug</label>
                     </div>
                     
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "aghost" value="ghost" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "aghost" value="ghost" autocomplete="off">
                     <label class="btn ghost" for="aghost">Ghost</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "asteel" value="steel" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "asteel" value="steel" autocomplete="off">
                     <label class="btn steel" for="asteel">Steel</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "afire" value="fire" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "afire" value="fire" autocomplete="off">
                     <label class="btn fire" for="afire">Fire</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "awater" value="water" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "awater" value="water" autocomplete="off">
                     <label class="btn water" for="awater">Water</label>
                     </div>
                     
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "agrass" value="grass" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "agrass" value="grass" autocomplete="off">
                     <label class="btn grass" for="agrass">Grass</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "aelectric" value="electric" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "aelectric" value="electric" autocomplete="off">
                     <label class="btn electric" for="aelectric">Electric</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "apsychic" value="psychic" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "apsychic" value="psychic" autocomplete="off">
                     <label class="btn psychic" for="apsychic">Psychic</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "aice" value="ice" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "aice" value="ice" autocomplete="off">
                     <label class="btn ice" for="aice">Ice</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "adragon" value="dragon" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "adragon" value="dragon" autocomplete="off">
                     <label class="btn dragon" for="adragon">Dragon</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "adark" value="dark" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "adark" value="dark" autocomplete="off">
                     <label class="btn dark" for="adark">Dark</label>
                     </div>
 
                     <div class ="col-sm-8 col-lg-3 col-md-4">
-                    <input type="radio" class="btn-check" name="type" id= "afairy" value="fairy" autocomplete="off">
+                    <input type="radio" class="btn-check" name="atype" id= "afairy" value="fairy" autocomplete="off">
                     <label class="btn fairy" for="afairy">Fairy</label>
                     </div>
                 </div>
 
                     <div class="justify-content-center">
-                    <button type="submit" class="btn btn-danger submit">ATTACK</button>
+                    <button type="submit" class="btn btn-danger submit" id="sub">ATTACK</button>
                     </div>
+                    
                 </form>
+
+
+
